@@ -14,5 +14,6 @@ public class currentAccount extends BankAccount{
     @Override
     void deposit(double m) {
         setBalance(getBalance()+m);
+
     }
 }
