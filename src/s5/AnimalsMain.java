@@ -5,10 +5,11 @@ public class AnimalsMain {
         Gos g = new Gos("Toby", 3);
         Ocell oc = new Ocell("Callou", 1);
 
-        g.ferSoroll();
+
         g.mostrarInformacio();
+        g.ferSoroll();
+        oc.mostrarInformacio();
         oc.ferSoroll();
         oc.volar();
-        oc.mostrarInformacio();
     }
 }

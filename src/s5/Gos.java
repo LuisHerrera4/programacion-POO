@@ -8,8 +8,8 @@ public class Gos extends Animal {
     }
 
     @Override
-    void mostrarInformacio() {
-        System.out.println("Se llama: " + getNom()+ " tiene: "+ getEdat() + " años");
+    public void mostrarInformacio() {
+        System.out.println("Se llama: " + getNom()+ " tiene: "+ getEdat() + " años y hace este sonido: ");
     }
 
     @Override

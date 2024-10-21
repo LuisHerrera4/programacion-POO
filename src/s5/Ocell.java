@@ -6,7 +6,7 @@ public class Ocell extends Animal implements Volador{
     }
 
     @Override
-    void mostrarInformacio() {
+    public void mostrarInformacio() {
         System.out.println("Se llama: " + getNom()+ " tiene: "+ getEdat()+ " años");
     }
 

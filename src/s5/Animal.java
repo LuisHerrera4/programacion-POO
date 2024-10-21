@@ -26,7 +26,9 @@ public abstract class Animal {
         this.edat = edat;
     }
 
-    abstract void mostrarInformacio();
+    public void mostrarInformacio(){
+        System.out.println("Nom: "+ nom+ ", Edat: "+ edat);
+    }
 
     abstract void ferSoroll();
 
