@@ -45,9 +45,19 @@ public class MainLlapis {
             System.out.println(l);
         }
 
+        //LinkedList sin hacer lo de duplicados
         LinkedList<Llapis> caixa2Link = new LinkedList<>(caixa2);
+        caixa2Link.addAll(caixa1);
 
+        // Imprimir LinkedLIst
         for(Llapis l: caixa2Link){
+            System.out.println(l);
+        }
+
+        //Esto es la caja sin duplicados usando el set temporal
+        List<Llapis> caixaUnica = new ArrayList<>(new HashSet<>(caixa2Link));
+        //Imprimir sin duplicados
+        for (Llapis l: caixaUnica){
             System.out.println(l);
         }
     }

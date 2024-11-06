@@ -1,5 +1,7 @@
 package EjCollections;
 
+import java.util.Objects;
+
 public class Llapis implements Comparable<Llapis>{
 
     private int color;
@@ -41,5 +43,23 @@ public class Llapis implements Comparable<Llapis>{
         if(this.color > l.getColor()) return -1;
         else if (this.color< l.getColor()) return 1;
         else return 0;
+    }
+
+    /*
+    Esto es necesario (equals, hasCode) para que el set detecte lso ducplicados que en mi caso he elegido que
+    detecte los duplicados por color y grosor
+     */
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Llapis llapis = (Llapis) o;
+        return color == llapis.color && Float.compare(gruix, llapis.gruix) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(color, gruix);
     }
 }
